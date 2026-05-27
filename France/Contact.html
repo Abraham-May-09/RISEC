@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <head>
+  <base href="../" />
+  <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <link rel="icon" type="image/png" href="icons/comunidades.png">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.540.0/dist/umd/lucide.min.js" defer onload="lucide.createIcons()"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Estilos y letras personalizadas -->
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .header-font { font-family: 'Pacifico', cursive; }
+    .bg-eco-overlay {
+      background:
+        linear-gradient(0deg, rgba(52,168,83,0.30), rgba(52,168,83,0.50)),
+        url('images/landscape-7807452_1920.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .tab-underline-hover { position: relative; transition: color .2s; }
+    .tab-underline-hover::after {
+      content: "";
+      position: absolute; left: 50%; right: 50%; bottom: -2px; height: 3px; border-radius: 2px;
+      background: linear-gradient(90deg, #60e879 0%, #42cba5 60%, #64c7fa 100%);
+      transition: left .35s cubic-bezier(.44,1.5,.58,1), right .35s cubic-bezier(.44,1.5,.58,1), opacity .23s;
+      opacity: 0; pointer-events: none;
+    }
+    nav .tab-underline-hover:hover::after,
+    nav .tab-underline-hover:focus::after,
+    nav .tab-underline-hover.active::after { left: 16%; right: 16%; opacity: 1; }
+    html { scrollbar-gutter: stable both-edges; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-white">
+  <!-- Menu y Logo -->
+  <header class="w-full bg-white/90 border-b border-green-200 shadow-sm fixed top-0 left-0 z-30">
+    <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-4 md:px-10">
+      <div class="flex items-center gap-0">
+        <a href="France/index.html" class="flex items-center gap-2">
+          <img src="images/RISEC.png" alt="Logo circular RISEC" class="h-16 w-auto align-middle">
+        </a>
+        <img src="images/LOGO_RISEC.png" alt="Texto RISEC" class="h-11 w-auto align-middle -ml-4">
+      </div>
+      <nav>
+        <ul class="flex gap-3 md:gap-8 text-green-900 font-semibold text-base">
+          <li><a href="France/index.html" class="tab-underline-hover">Accueil</a></li>
+          <li><a href="France/who_we_are.html" class="tab-underline-hover">À propos</a></li>
+          <li><a href="France/Upcoming_events.html" class="tab-underline-hover">Événements à venir</a></li>
+          <li><a href="France/Contact.html" class="tab-underline-hover text-green-600 font-extrabold">Contact</a></li>
+          <li class="hidden"><a href="#" class="tab-underline-hover">Publicaciones</a></li>
+          <li><a href="France/resources.html" class="tab-underline-hover">Ressources</a></li>
+          <li class="hidden"><a href="#" class="tab-underline-hover">Proyectos</a></li>
+          <li class="hidden"><a href="#" class="tab-underline-hover">Oportunidades</a></li>
+          <li class="hidden"><a href="#" class="tab-underline-hover">Comunidad</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="h-20"></div>
+  <!-- Contenido Principal -->
+  <main class="flex-1 w-full bg-eco-overlay flex flex-col justify-center">
+    <section class="max-w-3xl mx-auto py-14 px-4">
+      <h1 class="header-font text-5xl md:text-7xl text-white text-center mb-8 tracking-tight leading-tight drop-shadow-xl">Contact</h1>
+
+      <div class="bg-white/90 rounded-2xl shadow-xl border border-green-100 p-8 md:p-12 flex flex-col gap-6">
+        <div class="text-center mb-4">
+          <ul class="text-lg md:text-xl text-gray-700 font-semibold flex flex-col gap-3">
+            <li class="flex items-center justify-center gap-2">
+              <img src="icons/gmail.png" alt="Correo" class="h-6 w-6" />
+              <a href="mailto:info@risec.net" class="underline hover:text-green-600 transition">info@risec.net</a>
+            </li>
+            <li class="flex items-center justify-center gap-2">
+              <img src="icons/gorjeo.png" alt="X Twitter" class="h-6 w-6" />
+              <a href="https://twitter.com/@RISEC_network" target="_blank" class="underline hover:text-green-600 transition">@RISEC_network</a>
+            </li>
+            <li class="flex items-center justify-center gap-2">
+              <img src="icons/instagram.png" alt="Instagram" class="h-6 w-6" />
+              <a href="https://instagram.com/@risec.network" target="_blank" class="underline hover:text-green-600 transition">@risec.network</a>
+            </li>
+            <li class="flex items-center justify-center gap-2">
+              <img src="icons/youtube.png" alt="YouTube" class="h-6 w-6" />
+              <a href="https://youtube.com/@RISEC_newtwork" target="_blank" class="underline hover:text-green-600 transition">@RISEC_newtwork</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-2 border-green-100">
+        <h2 class="header-font text-4xl text-green-800 mt-2 mb-2 text-center">Comment participer ?</h2>
+        <div class="flex flex-col gap-4">
+          <div>
+            <h3 class="font-bold text-green-700">1. Devenez membre</h3>
+            <p class="text-gray-700 text-base">
+              Remplissez le formulaire en ligne et choisissez un groupe de travail correspondant à votre intérêt (déchets, agro-circularité, construction, etc.).            
+            </p>
+          </div>
+          <div>
+            <h3 class="font-bold text-green-700">2. Partagez vos connaissances</h3>
+            <p class="text-gray-700 text-base">
+              Envoyez des articles, cas de réussite ou ressources pédagogiques ; après révision par le Conseil scientifique, nous les publierons dans notre répertoire ouvert.            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<!-- Footer -->
+  <footer class="w-full py-6 border-t border-green-200 bg-white text-center text-gray-500 text-xs font-medium tracking-wide">
+    <div class="text-gray-400 text-xs font-medium tracking-wide text-center">
+      &copy; 2025 <strong>RISEC (Réseau International pour la Durabilité et l’Économie Circulaire).</strong> Tous droits réservés.
+    </div>  
+  </footer>
+<!-- Traductor-->
+<div id="fab-flags" style="position:fixed; bottom: max(16px, env(safe-area-inset-bottom)); right:  max(16px, env(safe-area-inset-right)); z-index: 2147483647; display:flex; gap:12px; align-items:center;">
+  <!-- Botón 1 -->
+  <a href="Contacto.html" title="espagnol" aria-label="Español" style="--size: 48px; /* ajusta a 44px, 56px, etc. */ display:block; width:var(--size); height:var(--size); border-radius:50%; background:#fff 
+    url('images/spain.png') center/cover no-repeat; border:1px solid rgba(0,0,0,.08); box-shadow:0 8px 18px rgba(0,0,0,.20); transition:transform .15s ease, box-shadow .15s ease;" onmouseover="this.style.transform='scale(1.06)'; this.style.boxShadow='0 10px 22px rgba(0,0,0,.24)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 8px 18px rgba(0,0,0,.20)'">
+  </a>
+  <!-- Botón 2 -->
+  <a href="English/Contact.html" title="anglais" aria-label="Ingles" style="--size: 48px; display:block; width:var(--size); height:var(--size); border-radius:50%; background:#fff 
+    url('images/usa.png') center/cover no-repeat; border:1px solid rgba(0,0,0,.08); box-shadow:0 8px 18px rgba(0,0,0,.20); transition:transform .15s ease, box-shadow .15s ease;" onmouseover="this.style.transform='scale(1.06)'; this.style.boxShadow='0 10px 22px rgba(0,0,0,.24)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 8px 18px rgba(0,0,0,.20)'">
+  </a>
+</div>
+</body>
+</html>
